@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Savoria - Fine Dining Experience</title>
+</head>
+
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+        <svg class="theme-icon" id="themeIcon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+        </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Savoria</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Savoria</h1>
+            <p>Where culinary artistry meets unforgettable experiences</p>
+            <a href="#menu" class="cta-button">Explore Our Menu</a>
+        </div>s
+    </section>
+
+    <!-- About Section -->
+    <section class="about fade-in" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <p>Crafting exceptional dining experiences since 2010</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>A Culinary Journey</h3>
+                    <p>At Savoria, we believe that exceptional food is an art form. Our passionate chefs combine
+                        traditional techniques with innovative flavors to create dishes that tell a story on every
+                        plate.</p>
+                    <br>
+                    <p>From locally sourced ingredients to our warm, inviting atmosphere, every detail is carefully
+                        crafted to provide you with an unforgettable dining experience that engages all your senses.</p>
+                </div>
+                <div class="about-image">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section class="menu-preview fade-in" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: white;">Signature Dishes</h2>
+                <p style="color: #ccc;">A taste of our culinary excellence</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Truffle Risotto <span class="price">$32</span></h3>
+                    <p>Creamy arborio rice with black truffle, parmesan, and fresh herbs</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Grilled Salmon <span class="price">$28</span></h3>
+                    <p>Atlantic salmon with lemon butter sauce and seasonal vegetables</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Beef Wellington <span class="price">$45</span></h3>
+                    <p>Tender beef tenderloin wrapped in puff pastry with mushroom duxelles</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Chocolate Soufflé <span class="price">$14</span></h3>
+                    <p>Rich dark chocolate soufflé with vanilla bean ice cream</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact fade-in" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Us</h2>
+                <p>We'd love to welcome you to Savoria</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3>Make a Reservation</h3>
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" name="guests" min="1" max="12" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Special Requests</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Book Table</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>📍 Location</h4>
+                        <p>123 Gourmet Street<br>Culinary District, CD 12345</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📞 Phone</h4>
+                        <p>(555) 123-FOOD<br>(555) 123-3663</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>⏰ Hours</h4>
+                        <p>Monday - Thursday: 5:00 PM - 10:00 PM<br>
+                            Friday - Saturday: 5:00 PM - 11:00 PM<br>
+                            Sunday: 4:00 PM - 9:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Savoria Restaurant. All rights reserved. | Crafted with ❤️ for food lovers</p>
+        </div>
+    </footer>
+
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>
